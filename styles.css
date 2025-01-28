@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #333;
+}
+
+.todo-container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    overflow: hidden;
+}
+
+.todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.todo-header h1 {
+    font-size: 2rem;
+    color: #6e8efb;
+    margin: 0;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #6e8efb;
+    border-radius: 8px;
+    padding: 5px;
+    background: #fff;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.search-bar .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6e8efb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.search-bar .search-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.todo-input {
+    display: flex;
+    margin: 20px 0;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #6e8efb;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.todo-input input:focus {
+    border-color: #a777e3;
+}
+
+.todo-input button {
+    padding: 12px 20px;
+    background: #6e8efb;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.3s ease;
+}
+
+.todo-input button:hover {
+    background: #a777e3;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #6e8efb;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.todo-item button:hover {
+    color: #a777e3;
+}
+
+.edit-input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .todo-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .todo-input button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
